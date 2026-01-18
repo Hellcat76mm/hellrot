@@ -23,11 +23,11 @@
     id: LawyerPDA
     ears: ClothingHeadsetSecurity
     pocket1: BookSecurity
-  inhand:
+    inhand:
     - BriefcaseBrownFilled
-  innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
-  satchel: ClothingBackpackSatchelLawyerFilled #DeltaV - stamp included
-  duffelbag: ClothingBackpackDuffelLawyerFilled #DeltaV - stamp included
+    innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
+    satchel: ClothingBackpackSatchelLawyerFilled #DeltaV - stamp included
+    duffelbag: ClothingBackpackDuffelLawyerFilled #DeltaV - stamp included
 
 - type: startingGear
   id: LawyerPlasmamanGear
