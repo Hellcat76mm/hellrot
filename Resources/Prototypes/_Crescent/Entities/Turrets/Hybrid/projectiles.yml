@@ -7,7 +7,7 @@
   components:
   - type: ProjectileIFF
     visualType: Circle
-    color: Purple
+    color: "#ea86f7" #you have no idea how hard it was to see the previous IFF color
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -16,7 +16,7 @@
         Radiation: 90
   - type: PointLight
     radius: 3.5
-    color: "#be7de3" #you have no idea how hard it was to see the previous IFF color
+    color: purple
     energy: 0.5
   - type: TimedDespawn
     lifetime: 7 #roughly 560m range
@@ -54,7 +54,7 @@
   components:
   - type: ProjectileIFF
     visualType: Circle
-    color: "#be7de3"
+    color: "#ea86f7"
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -88,7 +88,7 @@
   components:
   - type: ProjectileIFF
     visualType: Circle
-    color: "#be7de3"
+    color: "#ea86f7"
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
