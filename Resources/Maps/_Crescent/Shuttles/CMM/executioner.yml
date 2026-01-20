@@ -4943,11 +4943,11 @@ entities:
       parent: 1
     - type: NamedModules
       buttonNames:
-      - Toggle Rimward
-      - Fire Sumitomo
-      - Toggle Blastdoors
-      - Module D
-      - Module E
+      - Toggle 'Retribution'
+      - Fire 'Azimuth'
+      - Toggle 'Azimuth' Blastdoors
+      - Toggle 'Retribution' Blastdoors
+      - Bolt Airlocks
     - type: DeviceLinkSource
       linkedPorts:
         2:
