@@ -372,6 +372,7 @@
       - ClothingOuterHardsuitMinutemenEnsign
       - WeaponRifleCMMNimrod
       - WeaponShotgunKammerer
+      - WeaponSubMachineGunWt550
       #MinutemenEnd
       - CreoleTranslator
       - LowImperialTranslator
@@ -732,7 +733,6 @@
       - WeaponShotgunSHIDoubleBarreled4g
       - WeaponPistolMk58SHI
       - WeaponSubMachineGunMP49
-      - WeaponSubMachineGunWt550
       - WeaponRifleM90GrenadeLauncher
       - WeaponShotgunSpas
       - WeaponRifleBarghest
