@@ -1,3 +1,123 @@
+#retribution
+
+- type: entity
+  parent: BaseTurretShipgun
+  id: WeaponTurretRetribution
+  suffix: Small Laser
+  name: 200cc 'Retribution' small laser gatling
+  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds.
+  components:
+    - type: Sprite
+      sprite: _Crescent/Objects/Turrets/Laser/retribution.rsi
+      drawdepth: Mobs
+      layers:
+        - state: retribution
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 400
+          # TODO: Construction graph
+          behaviors:
+            - !type:ChangeConstructionNodeBehavior
+              node: machineFrame
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+    - type: Gun
+      fireOnDropChance: 0
+      projectileSpeed: 100
+      fireRate: 40
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      angleDecay: 0
+      minAngle: 0
+      maxAngle: 0
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
+        params:
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.2
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletRetribution
+      capacity: 400
+      count: 400
+    - type: ApcPowerReceiver
+      powerLoad: 2500
+    - type: HardpointAnchorableOnly
+      class: Energy
+      size: Small
+
+- type: entity
+  parent: BaseTurretShipgun
+  id: WeaponTurretRetributionNavy
+  suffix: Small Laser, Navy
+  name: navy-issue 200cc 'Retribution' small laser gatling
+  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds. Seems to be issued by the Imperial Navy.
+  components:
+    - type: Sprite
+      sprite: _Crescent/Objects/Turrets/Laser/retribution.rsi
+      drawdepth: Mobs
+      layers:
+        - state: retribution-dsm
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 400
+          # TODO: Construction graph
+          behaviors:
+            - !type:ChangeConstructionNodeBehavior
+              node: machineFrame
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+    - type: Gun
+      fireOnDropChance: 0
+      projectileSpeed: 90
+      fireRate: 5
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      angleDecay: 45
+      minAngle: 5
+      maxAngle: 15
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
+        params:
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.8
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.2
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletRetribution
+      capacity: 40
+      count: 10
+    - type: ApcPowerReceiver
+      powerLoad: 2500
+    - type: HardpointAnchorableOnly
+      class: Energy
+      size: Small
+
 #curse
 
 - type: entity
@@ -117,126 +237,6 @@
     - type: HardpointAnchorableOnly
       class: Energy
       size: Medium
-
-#retribution
-
-- type: entity
-  parent: BaseTurretShipgun
-  id: WeaponTurretRetribution
-  suffix: Small Laser
-  name: 200cc 'Retribution' small laser gatling
-  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds.
-  components:
-    - type: Sprite
-      sprite: _Crescent/Objects/Turrets/Laser/retribution.rsi
-      drawdepth: Mobs
-      layers:
-        - state: retribution
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 400
-          # TODO: Construction graph
-          behaviors:
-            - !type:ChangeConstructionNodeBehavior
-              node: machineFrame
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalGlassBreak
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-    - type: Gun
-      fireOnDropChance: 0
-      projectileSpeed: 90
-      fireRate: 4
-      selectedMode: FullAuto
-      availableModes:
-        - FullAuto
-      angleDecay: 45
-      minAngle: 5
-      maxAngle: 15
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
-        params:
-          variation: 0.12
-    - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 1
-      rechargeSound:
-        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-        params:
-          pitch: 1.2
-          variation: 0.08
-    - type: BasicEntityAmmoProvider
-      proto: BulletRetribution
-      capacity: 30
-      count: 10
-    - type: ApcPowerReceiver
-      powerLoad: 2500
-    - type: HardpointAnchorableOnly
-      class: Energy
-      size: Small
-
-- type: entity
-  parent: BaseTurretShipgun
-  id: WeaponTurretRetributionNavy
-  suffix: Small Laser, Navy
-  name: navy-issue 200cc 'Retribution' small laser gatling
-  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds. Seems to be issued by the Imperial Navy.
-  components:
-    - type: Sprite
-      sprite: _Crescent/Objects/Turrets/Laser/retribution.rsi
-      drawdepth: Mobs
-      layers:
-        - state: retribution-dsm
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 400
-          # TODO: Construction graph
-          behaviors:
-            - !type:ChangeConstructionNodeBehavior
-              node: machineFrame
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalGlassBreak
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-    - type: Gun
-      fireOnDropChance: 0
-      projectileSpeed: 90
-      fireRate: 5
-      selectedMode: FullAuto
-      availableModes:
-        - FullAuto
-      angleDecay: 45
-      minAngle: 5
-      maxAngle: 15
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
-        params:
-          variation: 0.12
-    - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 0.8
-      rechargeSound:
-        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-        params:
-          pitch: 1.2
-          variation: 0.08
-    - type: BasicEntityAmmoProvider
-      proto: BulletRetribution
-      capacity: 40
-      count: 10
-    - type: ApcPowerReceiver
-      powerLoad: 2500
-    - type: HardpointAnchorableOnly
-      class: Energy
-      size: Small
 
 #absolution
 

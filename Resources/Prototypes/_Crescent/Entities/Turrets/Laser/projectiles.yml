@@ -1,4 +1,31 @@
 - type: entity
+  id: BulletRetribution
+  name: volatile hardlight bolt
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ShipWeaponProjectile
+  - type: Projectile
+    ignoreWeaponGrid: true
+    damage:
+      types:
+        Radiation: 80
+        Structural: 5
+  - type: ProjectileIFF
+    visualType: Circle
+    color: Red
+  - type: PointLight
+    radius: 3.5
+    color: blue
+    energy: 0.5
+  - type: TimedDespawn
+    lifetime: 10
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
+    layers:
+      - state: laserlight
+
+- type: entity
   id: BulletCurse
   name: ion ray
   parent: BaseBulletTrigger
@@ -29,33 +56,6 @@
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
       - state: bluespace
-
-- type: entity
-  id: BulletRetribution
-  name: volatile hardlight bolt
-  parent: BaseBulletTrigger
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: ShipWeaponProjectile
-  - type: Projectile
-    ignoreWeaponGrid: true
-    damage:
-      types:
-        Heat: 80
-        Structural: 100
-  - type: ProjectileIFF
-    visualType: Circle
-    color: Red
-  - type: PointLight
-    radius: 3.5
-    color: blue
-    energy: 0.5
-  - type: TimedDespawn
-    lifetime: 10
-  - type: Sprite
-    sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
-    layers:
-      - state: laserlight
 
 - type: entity
   id: BulletAbsolution
