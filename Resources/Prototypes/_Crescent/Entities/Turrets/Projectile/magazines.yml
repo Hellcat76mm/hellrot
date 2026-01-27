@@ -271,7 +271,7 @@
       tags:
         - Cartridge20mm
     proto: Cartridge20mm
-    capacity: 500
+    capacity: 250
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
@@ -313,7 +313,7 @@
       tags:
         - Cartridge20mmGyrostable
     proto: Bullet20mmGyrostable
-    capacity: 500
+    capacity: 250
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
