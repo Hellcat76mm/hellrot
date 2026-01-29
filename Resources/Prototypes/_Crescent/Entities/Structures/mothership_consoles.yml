@@ -244,6 +244,7 @@
   - type: ShipyardListing
     shuttles:
     - Lucifer
+    - Fadeem
 
 - type: entity
   id: OuroborosMothershipComputer
@@ -286,3 +287,12 @@
     shuttles:
     - Roachling
     - Dungbeetle
+
+- type: entity
+  id: FadeemMothershipComputer
+  parent: BaseMothershipComputer
+  name: fadeem internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Caravan
