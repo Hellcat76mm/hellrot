@@ -796,3 +796,59 @@
     containers:
       item:
       - PlasmaSword
+#@no_originality donor railgun
+- type: entity
+  name: NT-Pattern "Enoch" Railgun
+  parent: [BaseItem, StreeCredRedeemable, BaseGunWieldable]
+  id: WeaponSpecialRailgunEnoch
+  description: A railgun prototype of Nanotrasen design, reclaimed from the depths of the Boundary's fog. On this one's stock is scratched a phrase, Hence nothing remains except for our regrets.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/Guns/Enoch.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Large
+    sprite: _Crescent/Objects/Weapons/Guns/Enoch.rsi
+    shape:
+    - 0,0,5,2
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridgeRailgun15mm
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRailgun15mm
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: true
+    canRack: false
+    soundBoltClosed: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundBoltOpened: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundRack: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/Guns/railgun.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - suitStorage
+  - type: GunRequiresWield
+  - type: Appearance
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 45
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Crescent/Weapons/Guns/non_collection/railgun.ogg
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Crescent/Weapons/Interact/gun_pick.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Crescent/Weapons/Interact/gun_drop.ogg
