@@ -9,7 +9,6 @@
     - Vanguard
     - Lodka
     - Ivarod
-    - Sunder
     - Stern
     - Gargut
     - Hind
@@ -62,7 +61,6 @@
     - Praxis
     - Laelaps
     #- Dragoon
-    - Suzerain
 
 - type: entity
   id: NemesisMothershipComputer
