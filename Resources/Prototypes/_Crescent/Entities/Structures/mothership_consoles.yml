@@ -45,6 +45,7 @@
     - Cerberus
     - Corvax
     - Ouroboros
+    - Cleaver
 
 - type: entity
   id: CountsmanMothershipComputer
