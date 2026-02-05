@@ -26,9 +26,6 @@
     layers:
       - state: infernoshot
   - type: ShipWeaponProjectile
-    mask:
-    - BulletImpassable
-    - Impassable
 
 - type: entity
   id: BulletPlasmaBall
