@@ -6,7 +6,7 @@
   name: Pear MKII
   description: |
     The Pear MKII is a combat capable retrofit, made from a wreck of a pear. It's loadout is made out of scavenged ship guns salvaged from derelicts.
-    LOADOUT: 1x 88mm 'Corpus' flak-screen point defense system, 1x 0mm 'Screamer' light carbine repeater cannon, 1x Fixed Universal Hardpoint
+    LOADOUT: 1x 88mm 'Corpus' flak-screen point defense system, 1x 20mm 'Screamer' light carbine repeater cannon, 1x Fixed Universal Hardpoint
     MINIMUM CREW: 1x Pilot, 1x Gunner/Loader
   price: 30000
   category: Small
