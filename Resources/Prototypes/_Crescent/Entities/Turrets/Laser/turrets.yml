@@ -31,7 +31,7 @@
     - type: Gun
       fireOnDropChance: 0
       projectileSpeed: 120
-      fireRate: 1
+      fireRate: .5
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -90,7 +90,7 @@
     - type: Gun
       fireOnDropChance: 0
       projectileSpeed: 120
-      fireRate: 2.2
+      fireRate: .5
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -102,7 +102,7 @@
         params:
           variation: 0.12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 0.75
+      rechargeCooldown: 10
       rechargeSound:
         path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
         params:
@@ -287,8 +287,8 @@
           variation: 0.08
     - type: BasicEntityAmmoProvider
       proto: BulletAbsolution
-      capacity: 35
-      count: 35
+      capacity: 40
+      count: 40
     - type: ApcPowerReceiver
       powerLoad: 4000
     - type: HardpointAnchorableOnly
