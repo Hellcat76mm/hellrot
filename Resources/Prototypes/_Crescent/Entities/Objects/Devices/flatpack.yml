@@ -1113,7 +1113,7 @@
 
 - type: entity
   parent: BaseFlatpack
-  id: BaseWeaponTurretGargoyleFlatpack
+  id: BaseWeaponTurretNewGargoyleFlatpack
   name: 240mm 'Gargoyle' heavy torpedo launcher system
   description: Parts used to build a 240mm 'Gargoyle' heavy torpedo launcher system. Activate with a multitool to deploy.
   components:
