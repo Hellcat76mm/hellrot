@@ -135,7 +135,7 @@
     Plasma: 3
     Uranium: 3
   outputs:
-    Cartridge120mm:
+    Cartridge120mm: 1
 
 - type: factoryRecipe
   id: 120mmGyrostableFabrication
