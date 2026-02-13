@@ -15,8 +15,8 @@
 - type: spaceBiome
   id: GraveyardWrecks
   priority: 9000
-  minX: -35
-  maxX: -50
+  minX: -50
+  maxX: -35
   minY: 35
   maxY: 50
   noiseRanges: {}
@@ -248,8 +248,8 @@
   priority: 9000
   minX: 35
   maxX: 50
-  minY: -35
-  maxY: -50
+  minY: -50
+  maxY: -35
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -528,7 +528,7 @@
 
 - type: spaceBiome
   id: NewAsteroidsStandardTaypanOne
-  priority: 9001
+  priority: 9000
   minX: 35
   maxX: 50
   minY: 35
@@ -555,10 +555,10 @@
 - type: spaceBiome
   id: NewAsteroidsStandardTaypanTwo
   priority: 9000
-  minX: -35
-  maxX: -50
-  minY: -35
-  maxY: -50
+  minX: -50
+  maxX: -35
+  minY: -50
+  maxY: -35
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
