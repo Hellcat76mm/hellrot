@@ -411,7 +411,6 @@
       fireOnDropChance: 0
       projectileSpeed: 150
       burstFireRate: 4.5
-      shotsPerburst: 3
       burstCooldown: 1.2
       selectedMode: Burst
       availableModes:
