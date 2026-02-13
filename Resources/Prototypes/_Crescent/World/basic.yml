@@ -16,7 +16,7 @@
   id: GraveyardWrecks
   priority: 9000
   minX: -35
-  axX: -50
+  maxX: -50
   minY: 35
   maxY: 50
   noiseRanges: {}
